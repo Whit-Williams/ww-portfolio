@@ -8,51 +8,61 @@
 </head>
 
 <body>
-    
-    <main>
-        <header id="pageTop">   
-            <h1> Whitney Williams </h1>   
+        <!--Page title and navigation bar-->
+
+        <header>   
+            <h1> WHITNEY WILLIAMS. </h1>  
                 <nav id="navBar">
-                    <li> About Me </li>
-                    <li> Portfolio </li>
-                    <li> Get in touch </li>
+                        <li> About Me </li>
+                        <li> Portfolio </li>
+                        <li> Get in touch </li>
                 </nav>
         </header> 
-<br>
-<br>
 
-<h2> About Me </h2>
+        <main>
+        
+            <!--About me section starts here-->
+
+            <h2 id="aboutTitle"> About Me: </h2>
+
         <section id="aboutMe">
 
             <section id="aboutmeText"> 
                 This is where the about me text will go. </section>
             <section id="aboutmeImg">
-                This is where my image will eventually go. </section>
+                <img src="./images/aboutmeimage.jfif" alt="">
+             </section>
         
             </section>
+      
+            <!--Portfolio starts here-->
 
-<br>
-<br>      
-
-<h2>Portfolio</h2>
+     <h2 id="portfolioTitle">Portfolio:</h2>
 
         <section class="myWork">
 
-            <section id="topLeft"> This is my first deployed project </section>
-            <section id="topMiddle"> This is my second deployed project</section>
-            <section id="topRight"> This is my third deployed project</section>
-            <section id="bottomLeft"> This is my fourth deployed project </section>
-            <section id="bottomMiddle"> This is my fifth deployed project</section>
-            <section id="bottomRight"> This is my sixth deployed project</section>
-       
+                <section id="topLeft"> <a href="https://whit-williams.github.io/The-Horiseon-Project/"> <img src="https://pixabay.com/photos/rose-flower-dew-dewdrops-droplets-5452046/" alt="">   </a> This is my first deployed project </section>
+                
+                <section id="topRight"> <a href=""> <img src="">   </a> This is my second deployed project </section>
+
+                <section id="middleRight"> <a href=""> <img src="">   </a> This is my third deployed project </section>
+
+                <section id="bottomLeft"> <a href=""> <img src="">   </a> This is my fourth deployed project </section>
+
+                <section id="bottomMiddle"> <a href=""> <img src="">   </a> This is my fifth deployed project
+                </section>
+
+                <section id="bottomRight"> <a href=""> <img src="">   </a> This is my sixth deployed project
+                </section>
+            </section>
         </section>
 <br>
 <br>
-        <section id="contactMe">
 
-            <h2> this is the contact me section </h2>
-
-<br>
+            <!--Contact me form starts here-->
+     <h2 id="contactH2"> Get in touch: </h2>
+       
+    <section id="contactMe">
 
             <form id="contactForm" action="">
     
@@ -73,7 +83,7 @@
                 <input type="textarea" id="formAddtText"name="formAddtText" required>
 
                 <!-- Submits the info in the contact me form-->
-                <input type="submit"value="Submit" required>
+                <input type="submit" id="contactSubmit"value="Submit" required>
 
 
             </form>
@@ -81,7 +91,7 @@
         </section>
 
     </main>
-
+                 <!--End of main section-->
 <br>
 <br>    
 
@@ -89,7 +99,8 @@
 
         <h4> copyright information and social links </h4>
 
-        <!-- This is where the social media links go -->
+                <!-- Social media links -->
+                
         <section id="socialLinks">
             
         <a href=""> <img src="">   </a> <!--This is to LinkedIn-->
@@ -97,7 +108,8 @@
         <a href=""> <img src="">   </a> <!--This is to GitHub-->
         
     </section>
-    </footer>
+    
+</footer>
 
 
 
