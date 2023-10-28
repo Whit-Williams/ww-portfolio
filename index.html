@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Whitney's Portfolio | Homepage</title>
 </head>
 
@@ -14,19 +15,19 @@
             <h1> WHITNEY WILLIAMS. </h1>  
                 <nav id="navBar">
                         <li> 
-                            <a href="#aboutTitle"> About Me &nbsp; /</a>
+                            <a href="#aboutTitle"> ABOUT ME </a>
                         </li>
                         <li> 
-                            <a href="#portfolioTitle"> Portfolio &nbsp; /</a>
+                            <a href="#portfolioTitle"> PORTFOLIO </a>
                         </li>
                         <li> 
-                            <a href="#contactH2"> Get in touch </a> 
+                            <a href="#contactH2"> GET IN TOUCH </a> 
                         </li>
                 </nav>
         </header> 
 
         <main>
-        
+
             <!--About me section starts here-->
 
             <h2 id="aboutTitle"> About Me: </h2>
@@ -47,48 +48,50 @@
 
         <section id="myWorkGrid">
 
-                <section id="topLeft" class="workGridArea"> <a href="https://whit-williams.github.io/The-Horiseon-Project/"> This is my first deployed project </section>
+                <section id="topLeft" class="workGridArea"> <a href="https://whit-williams.github.io/The-Horiseon-Project/"> <p> The Horiseon Project </p> </section>
                 
-                <section id="topRight" class="workGridArea"> <a href="#"> </a> This is my second deployed project </section>
+                <section id="topRight" class="workGridArea"> <a href="#"> </a> <p> Project 2 </p> </section>
 
-                <section id="middleRight" class="workGridArea"> <a href="#"> </a> This is my third deployed project </section>
+                <section id="middleRight" class="workGridArea"> <a href="#"> </a> <p> Project 3 </p> </section>
 
-                <section id="bottomLeft" class="workGridArea"> <a href="#">  </a> This is my fourth deployed project </section>
+                <section id="bottomLeft" class="workGridArea"> <a href="#">  </a> <p> Project 4 </p> </section>
 
-                <section id="bottomMiddle" class="workGridArea"> <a href="#">  </a> This is my fifth deployed project </section>
+                <section id="bottomMiddle" class="workGridArea"> <a href="#"> </a> <p> Project 5 </p> </section>
 
-                <section id="bottomRight" class="workGridArea"> <a href="#">  </a> This is my sixth deployed project </section>
+                <section id="bottomRight" class="workGridArea"> <a href="#">  </a> <p> Project 6 </p> </section>
             
             </section>
-<br>
-<br>
 
             <!--Contact me form starts here-->
+
      <h2 id="contactH2"> Send me a message: </h2>
        
     <section id="contactMe">
 
+        
             <form id="contactForm" action="">
+
+                <h3> Please enter your details below &#11022;</h3>
     
                 <!--Adds first name section in contact me form-->
-                <label for="fname">First name:</label>
-                <input type="text" id="fname"name="fname" required><br><br>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname"name="fname" required /><br>
 
                 <!--Adds last name section in contact me form-->
-               <label for="lname">Last name:</label>
-               <input type="text" id="lname"name="lname" required><br><br>
+               <label for="lname">Last name:</label><br>
+               <input type="text" id="lname"name="lname" required /><br>
 
-                <!-- Adds email address section in contact me form-->
-               <label for="contactEmail">Email address:</label>
-                <input type="email" id="contactEmail"name="contactEmail" required><br><br>
+                <!--Email address section on contact me form-->
+               <label for="contactEmail">Email address:</label><br>
+                <input type="email" id="contactEmail"name="contactEmail" required /><br>
             
-
-                <!-- Adds additional information section to contact me form-->
-                <label for="formAddtText">Your message:</label>
-                <input type="textarea" id="formAddtText"name="formAddtText" required><br><br>
+                <!--Additional information-->
+                <label for="formAddtText">Your message:</label><br>
+                <textarea id="formAddtText"name="formAddtText" required></textarea>
 <br>
 <br>
-                <!-- Submits the info in the contact me form-->
+<br>
+                <!--Submit form-->
                 <input type="submit" id="contactSubmit"value="Submit" required>
 
 
@@ -97,27 +100,29 @@
         </section>
 
     </main>
-                 <!--End of main section-->
+                 
 <br>
 <br>    
+            <!--Footer section-->
 
     <footer id="footerSection">
 
-        <h4> copyright information and social links </h4>
+       <a href="#top"> <h4> Back to the top ↑ </h4> </a>
 
-                <!-- Social media links -->
+                <!--Social media links-->
                 
-        <section id="socialLinks">
+        <section class="socialLinks">
+           
+            <!--This is to LinkedIn-->
+            <a href="https://www.linkedin.com/in/whitney-williams-4b28b127a/" class="fa fa-linkedin"></a>
+            <!--This is to Medium-->
+            <a href="https://www.medium.com/@thewriterwhit" class="fa fa-medium"></a>
+            <!--This is to GitHub-->
+            <a href="https://github.com/Whit-Williams" class="fa fa-github"></a> 
             
-        <a href="">  </a> <!--This is to LinkedIn-->
-        <a href="">  </a> <!--This is to Medium-->
-        <a href="">  </a> <!--This is to GitHub-->
-        
-    </section>
+        </section>
     
 </footer>
-
-
 
 </body>
 

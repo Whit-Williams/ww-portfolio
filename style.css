@@ -1,41 +1,43 @@
 :root {
 --sectionBG: rgb(0,0,0,0.7);
 --lightContrast: white;
---H2fontsize: 50px;
+--H2fontsize: 300%;
 --darkBorder: #000000; 
 --darkBackgr: #000000;
 --lightImpact: 50;
+--linkDefaultStyle: none;
+--alignCenter: center;
 }
 
 header {
-padding: 0.2%;
+padding: 0.01%;
 color: var(--lightContrast);
 background-color: var(--darkBackgr);
 }
 
 header h1 {
-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-weight: lighter;
-text-align: center;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: var(--lightImpact);
+text-align: var(--alignCenter);
 font-size: 500%;
 }
 
 #navBar {
 display: flex;
 width: 100%;
-gap: 1.5%;
-font-size: 120%;
-justify-content: center;
-background-color: var(--darkBackgr); 
-color: var(--lightContrast);
-font-family:monospace;
+list-style: var(--linkDefaultStyle);
+background-color: var(--darkBackgr);
 padding-bottom: 2%; 
-list-style: none;
+gap: 1.6%;
+justify-content: center;
+font-size: 110%;
+color: var(--lightContrast);
+font-family: monospace;
 }   
 
 #navBar a {
 color: white;    
-text-decoration: none;
+text-decoration: var(--linkDefaultStyle);
 }
 
 #navBar a:hover {
@@ -44,7 +46,7 @@ font-size: 130%;
 
 /* Flexbox container for the about me section */
 #aboutTitle {
-text-align: center; 
+text-align: var(--alignCenter); 
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 font-weight: var(--lightImpact);
 font-size: var(--H2fontsize);  
@@ -52,45 +54,46 @@ font-size: var(--H2fontsize);
 
 #aboutMe {
 display: flex;
-/* add flex item here to center the text/image, add position auto to all parents for responsiveness */
 }
 
 /* About me child elements */
 
 #aboutmeText {
 padding: 2%;
-border: 4px solid var(--darkBorder);
 width: 80%;
 margin-left: 3%;
+border: 4px solid var(--darkBorder);
+font-family: monospace;
+font-size: 15px;
 }
 
 #aboutmeImg img {
 width: 65%;
 height: auto;
-border: 3px solid rgba(0, 0, 0, 0.795);
-box-shadow: 5px 6px rgba(0, 0, 0, 0.712);
 float: right;
 margin-right: 19%;
+border: 3px solid rgba(0, 0, 0, 0.795);
+box-shadow: 5px 6px rgba(0, 0, 0, 0.712);
 }
 
 /* Grid container for the Portfolio section */
 
 #portfolioTitle {
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: var(--lightImpact);
-    font-size: var(--H2fontsize); 
+text-align: var(--alignCenter);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: var(--lightImpact);
+font-size: var(--H2fontsize); 
 }
 
 #myWorkGrid {
-min-height: 600px;
+min-height: 700px;
 margin-left: 2%;
 margin-right: 2%;
 column-gap: 1%;
 row-gap: 2%;
-display:grid;
-grid-template-columns: auto;
-grid-template-rows: auto;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
 grid-template-areas: 
 "topLeft topLeft topRight"
 "topLeft topLeft middleRight"
@@ -101,38 +104,32 @@ grid-template-areas:
 
 #topLeft {
 grid-area: topLeft;
-background-image: url(./images/boat-image.jpg);
- 
+background-image: url(./images/colvers-8173610_1920.jpg);
 }
 
 #topRight {
 grid-area: topRight;
-background-image: url(./images/dog-image.jpg);
-
+background-image: url(./images/game-image.jpg);
 }
 
 #middleRight {
 grid-area: middleRight;
-background-image: url(./images/game-image.jpg);
-
+background-image: url(./images/dog-image.jpg);
 }
 
 #bottomLeft {
 grid-area: bottomLeft;
-background-image: url(./images/moon-image.jpg);
-
+background-image: url(./images/mountains-image.jpg);
 }
 
 #bottomMiddle {
 grid-area: bottomMiddle;
-background-image: url(./images/mountains-image.jpg);
-
+background-image: url(./images/rope-image.jpg);
 }
 
 #bottomRight {
 grid-area: bottomRight;
-background-image: url(./images/rope-image.jpg);
-
+background-image: url(./images/moon-image.jpg);
 }
 
 .workGridArea {
@@ -141,40 +138,108 @@ background-repeat: no-repeat;
 background-size: cover;
 align-items: flex-end;
 display: flex;
-position: relative; 
+position: relative;
+font-family:Georgia, 'Times New Roman', Times, serif;
+color: var(--lightContrast);
+font-weight: var(--lightImpact);
+padding: 3%;
+font-size: 150%;
+}
+
+.workGridArea a {
+text-decoration: var(--linkDefaultStyle);
+color: var(--lightContrast);
+}
+
+.workGridArea a:hover {
+font-size: 160%;    
 }
 
 /* Selectors for the contact me section */
 
 #contactH2 {
-text-align: center;
+text-align: var(--alignCenter);
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-weight: var(--lightImpact);
 font-size: var(--H2fontsize);
 }
 
-#contactMe {
-text-align: center;
+#contactMe {    
 border: 5px var(--darkBorder) solid;
-padding: 5%;
+padding: 3% 5% 5% 5%;
 margin: 2%;
+display: flex;
+align-items: center;
+font-family: monospace;
+font-size: 15px;
 }
 
-#fname, #lname, #contactEmail, #formAddText {
-
-
+input[type=text] {
+padding: 4%;
+margin-top: 2%;
+margin-bottom: 2%;
+border: 3px solid;
+width: 190%;
 }
 
-#formAddtText {
-width: 70%;
-height:300px;
+input[type=email] {
+padding: 4%;
+margin-top: 2%;
+margin-bottom: 5%;
+border: 3px solid;
+width: 190%
 }
+
+textarea {
+margin-top: 4%;
+border: 3px solid;
+resize:none;
+width: 300%;
+height: 300px;
+}
+
+input[type=submit] {
+padding: 3%;
+width: 100%;
+font-family: monospace;
+background-color: var(--darkBackgr);
+color: var(--lightContrast);
+cursor:pointer;
+text-decoration: none;
+}
+
+/* Footer section, including social links  */
 
 #footerSection {
-padding: 1%;    
-text-align: center; 
+padding: 1% 1% 2% 1%;     
+text-align: var(--alignCenter); 
 background-color: var(--darkBackgr);
 color: var(--lightContrast);   
+}
+
+#footerSection a {
+text-decoration: var(--linkDefaultStyle);
+color: var(--lightContrast);  
+}
+
+#footerSection a h4 {
+font-family: monospace;      
+}
+
+#footerSection a h4:hover {
+text-decoration: underline;    
+}
+
+.fa {
+padding: 0.5%;
+font-size: 30px;
+width: 30px;
+text-align: var(--alignCenter);
+text-decoration: none;
+}
+  
+.fa:hover {
+opacity: 0.7;
 }
 
 @media screen {
