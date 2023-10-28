@@ -1,17 +1,16 @@
-:root{
+:root {
 --sectionBG: rgb(0,0,0,0.7);
 --lightContrast: white;
 --H2fontsize: 50px;
 --darkBorder: #000000; 
 --darkBackgr: #000000;
-
+--lightImpact: 50;
 }
 
 header {
 padding: 0.2%;
 color: var(--lightContrast);
 background-color: var(--darkBackgr);
-
 }
 
 header h1 {
@@ -19,8 +18,6 @@ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-weight: lighter;
 text-align: center;
 font-size: 500%;
-
-
 }
 
 #navBar {
@@ -34,36 +31,37 @@ color: var(--lightContrast);
 font-family:monospace;
 padding-bottom: 2%; 
 list-style: none;
-
 }   
 
+#navBar a {
+color: white;    
+text-decoration: none;
+}
+
+#navBar a:hover {
+font-size: 130%;    
+}
 
 /* Flexbox container for the about me section */
 #aboutTitle {
 text-align: center; 
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
-font-weight: 50;
-font-size: var(--H2fontsize)  
-
+font-weight: var(--lightImpact);
+font-size: var(--H2fontsize);  
 }
-
 
 #aboutMe {
 display: flex;
-
-
 /* add flex item here to center the text/image, add position auto to all parents for responsiveness */
 }
 
 /* About me child elements */
 
 #aboutmeText {
-margin: auto;
-padding: 10%;
+padding: 2%;
 border: 4px solid var(--darkBorder);
 width: 80%;
-margin-left: 3%; /* check if this is correct alongside margin auto */
-
+margin-left: 3%;
 }
 
 #aboutmeImg img {
@@ -73,9 +71,6 @@ border: 3px solid rgba(0, 0, 0, 0.795);
 box-shadow: 5px 6px rgba(0, 0, 0, 0.712);
 float: right;
 margin-right: 19%;
-
-
-
 }
 
 /* Grid container for the Portfolio section */
@@ -83,51 +78,70 @@ margin-right: 19%;
 #portfolioTitle {
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 50;
-    font-size: var(--H2fontsize);
-    
-    }
-
-.myWork {
-display:grid;
-grid-template-columns: 75% 25%;
-grid-template-rows: 1fr 1fr 1fr;
-grid-template-areas: 
-"topLeft topRight"
-"topLeft middleRight"
-"bottomLeft bottomMiddle bottomRight";
-background-color: (--sectionBG);
-border: 5px solid var(--darkBorder);
-
+    font-weight: var(--lightImpact);
+    font-size: var(--H2fontsize); 
 }
 
+#myWorkGrid {
+min-height: 600px;
+margin-left: 2%;
+margin-right: 2%;
+column-gap: 1%;
+row-gap: 2%;
+display:grid;
+grid-template-columns: auto;
+grid-template-rows: auto;
+grid-template-areas: 
+"topLeft topLeft topRight"
+"topLeft topLeft middleRight"
+"bottomLeft bottomMiddle bottomRight";
+}
 
 /* Grid items within the myWork grid container */
 
-#topLeft, #topRight, #middleRight, #bottomLeft, #bottomMiddle, #bottomRight {
-
-    justify-content: center;
-
+#topLeft {
+grid-area: topLeft;
+background-image: url(./images/boat-image.jpg);
+ 
 }
 
 #topRight {
+grid-area: topRight;
+background-image: url(./images/dog-image.jpg);
 
 }
 
 #middleRight {
+grid-area: middleRight;
+background-image: url(./images/game-image.jpg);
 
 }
 
 #bottomLeft {
+grid-area: bottomLeft;
+background-image: url(./images/moon-image.jpg);
 
 }
 
 #bottomMiddle {
+grid-area: bottomMiddle;
+background-image: url(./images/mountains-image.jpg);
 
 }
 
 #bottomRight {
+grid-area: bottomRight;
+background-image: url(./images/rope-image.jpg);
 
+}
+
+.workGridArea {
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+align-items: flex-end;
+display: flex;
+position: relative; 
 }
 
 /* Selectors for the contact me section */
@@ -135,16 +149,15 @@ border: 5px solid var(--darkBorder);
 #contactH2 {
 text-align: center;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-weight: 50;
+font-weight: var(--lightImpact);
 font-size: var(--H2fontsize);
-
-
 }
+
 #contactMe {
 text-align: center;
 border: 5px var(--darkBorder) solid;
 padding: 5%;
-
+margin: 2%;
 }
 
 #fname, #lname, #contactEmail, #formAddText {
@@ -155,11 +168,13 @@ padding: 5%;
 #formAddtText {
 width: 70%;
 height:300px;
-
 }
 
 #footerSection {
-text-align: center;    
+padding: 1%;    
+text-align: center; 
+background-color: var(--darkBackgr);
+color: var(--lightContrast);   
 }
 
 @media screen {
