@@ -1,13 +1,16 @@
 :root{
 --sectionBG: rgb(0,0,0,0.7);
 --lightContrast: white;
---H2fontsize: 50px
+--H2fontsize: 50px;
+--darkBorder: #000000; 
+--darkBackgr: #000000;
+
 }
 
 header {
-padding: 0.5%;
+padding: 0.2%;
 color: var(--lightContrast);
-background-color: #000000;
+background-color: var(--darkBackgr);
 
 }
 
@@ -24,11 +27,12 @@ font-size: 500%;
 display: flex;
 width: 100%;
 gap: 1.5%;
+font-size: 120%;
 justify-content: center;
-background-color: #000000; 
+background-color: var(--darkBackgr); 
 color: var(--lightContrast);
 font-family:monospace;
-padding-bottom: 20px; 
+padding-bottom: 2%; 
 list-style: none;
 
 }   
@@ -46,19 +50,32 @@ font-size: var(--H2fontsize)
 
 #aboutMe {
 display: flex;
-justify-content: center;
-border: 4px solid black;
 
+
+/* add flex item here to center the text/image, add position auto to all parents for responsiveness */
 }
 
 /* About me child elements */
 
 #aboutmeText {
 margin: auto;
+padding: 10%;
+border: 4px solid var(--darkBorder);
+width: 80%;
+margin-left: 3%; /* check if this is correct alongside margin auto */
+
 }
 
-#aboutmeImg {
-transform: scale(0.4);
+#aboutmeImg img {
+width: 65%;
+height: auto;
+border: 3px solid rgba(0, 0, 0, 0.795);
+box-shadow: 5px 6px rgba(0, 0, 0, 0.712);
+float: right;
+margin-right: 19%;
+
+
+
 }
 
 /* Grid container for the Portfolio section */
@@ -80,7 +97,7 @@ grid-template-areas:
 "topLeft middleRight"
 "bottomLeft bottomMiddle bottomRight";
 background-color: (--sectionBG);
-border: 5px solid #000000 ;
+border: 5px solid var(--darkBorder);
 
 }
 
@@ -124,17 +141,20 @@ font-size: var(--H2fontsize);
 
 }
 #contactMe {
-display: flex;    
-background-color: (--sectionBG);
-margin: auto;
-}
-
-#contactForm {
-
+text-align: center;
+border: 5px var(--darkBorder) solid;
+padding: 5%;
 
 }
 
-#fname, #lname, #contactEmail, #formAddText, #contactSubmit {
+#fname, #lname, #contactEmail, #formAddText {
+
+
+}
+
+#formAddtText {
+width: 70%;
+height:300px;
 
 }
 
