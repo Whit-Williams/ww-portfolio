@@ -202,11 +202,11 @@ background-color: var(--darkBackgr);
 color: var(--lightContrast);   
 }
 
-.footerSection a h4 {
+.footerSection a h5 {
 font-family: monospace;      
 }
 
-.footerSection a h4:hover {
+.footerSection a h5:hover {
 text-decoration: underline;    
 }
 
