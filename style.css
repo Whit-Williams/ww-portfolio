@@ -202,7 +202,7 @@ background-color: var(--darkBackgr);
 color: var(--lightContrast);   
 }
 
-.aboutMe a h4 {
+.footerSection a h4 {
 font-family: monospace;      
 }
 
@@ -210,12 +210,15 @@ font-family: monospace;
 text-decoration: underline;    
 }
 
+.socialLinks p {   
+display: none;     
+}
+
 .fa {
 padding: 0.5%;
-font-size: 30px;
-width: 30px;
 text-align: var(--alignCenter);
 text-decoration: none;
+font-size: 50px;
 }
   
 .fa:hover {
