@@ -133,7 +133,7 @@ background-size: cover;
 position: relative;
 }
 
-.workGridArea p {
+.workGridArea h3 {
 background-color: rgb(0,0,0,0.7);    
 color: var(--lightContrast);
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
