@@ -1,6 +1,4 @@
-
-
-
+/* Changes the style of the page scrollbar */
 body::-webkit-scrollbar {
 width: 18px;  
 }
@@ -14,6 +12,11 @@ background-color: rgb(255, 255, 255);
 width: 14px;    
 }
 
+/* Root properties for CSS Variables  */
+* {
+box-sizing: border-box;
+}
+
 :root {
 --sectionBG: rgb(0,0,0,0.7);
 --lightContrast: white;
@@ -23,38 +26,40 @@ width: 14px;
 --lightImpact: 50;
 --linkDefaultStyle: none;
 --alignCenter: center;
+--section-margins: 0% 2% 0% 2%;
 }
 
+/* Declarations for the header section, including navigation bar */
 header {
 padding: 0.01%;
 color: var(--lightContrast);
 background-color: var(--darkBackgr);
 }
 
-header h1 {
+h1 {
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-weight: var(--lightImpact);
 text-align: var(--alignCenter);
 font-size: 500%;
 }
 
-.nav-bar-top {
-display: flex;    
+.nav-bar-top ul {   
 width: 100%;
 list-style: var(--linkDefaultStyle);
 background-color: var(--darkBackgr);
-padding-bottom: 2%; 
 gap: 1.6%;
-justify-content: center;
 font-size: 110%;
 color: var(--lightContrast);
 font-family: monospace;
+display: flex;
+justify-content: center; 
 }   
 
 .nav-bar-top a:hover {
 font-size: 130%;    
 }
 
+/* Applies declarations to all H2 titles on page */
 .h2-titles {
 text-align: var(--alignCenter); 
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
@@ -62,43 +67,40 @@ font-weight: var(--lightImpact);
 font-size: var(--H2fontsize);      
 }
 
+/* Excludes the myemail class attribute from styles applied to page links */
 a:not(.myemail) {
 text-decoration: var(--linkDefaultStyle);
 color: var(--lightContrast);    
 }
 
 /* Flexbox container for the about me section - CHECK THIS */
-
 .aboutme {
 display: flex;
+gap: 5%;
+margin: var(--section-margins)
 }
 
 /* About me child elements  - CHECK THIS */
-
 #aboutme-text {
-padding: 2%;
-width: 80%;
-margin-left: 3%;
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+padding: 0.5% 0.5% 0.5% 1%;   
 border: 4px solid var(--darkBorder);
 font-family: monospace;
-font-size: 15px;
+font-size: 120%;
 }
 
 #aboutme-img img {
-width: 65%;
-height: auto;
-float: right;
-margin-right: 19%;
+width: 100%;    
 border: 3px solid rgba(0, 0, 0, 0.795);
 box-shadow: 5px 6px rgba(0, 0, 0, 0.712);
 }
 
 /* Grid container for the Portfolio section */
-
 .myworkgrid {
-min-height: 700px;
-margin-left: 2%;
-margin-right: 2%;
+height: 700px;
+margin: var(--section-margins);
 column-gap: 1%;
 row-gap: 2%;
 display: grid;
@@ -111,7 +113,6 @@ grid-template-areas:
 }
 
 /* Grid items within the myWork grid container */
-
 #top-left {
 grid-area: top-left;
 background-image: url(./images/colvers-8173610_1920.jpg);
@@ -166,64 +167,65 @@ font-weight: 100;
 font-size: 280%;    
 }
 
-/* Selectors for the contact me section */
-
-#contactme {    
+/* Declarations for the contactme flexbox container */
+.contactme {    
 display: flex;
 font-family: monospace;
-font-size: 15px;
+font-size: 110%;
 justify-content: space-evenly;
 flex-direction: row;
+max-width: 100%;
 }
 
+/* Declarations for the child elements within the contactme flex container */
 #contact-form {
 border: 5px var(--darkBorder) solid;
 padding: 3% 5% 5% 5%;
-margin: 2%;    
+margin: 2%; 
+min-width: 50%;
 }
 
 .myemail {
-padding-top: 30px;
-padding-left: 30px;
-max-width: 700px; 
-margin-bottom: 700px;
+padding: 1.75% 5% 1.5% 3%;
 line-height: 1.7; 
-font-size: 30px;
+font-size: 195%;
 text-decoration: none;
 color: black;    
 }
 
+.smallscreenemail {
+display: none;    
+}
+
 #myemail {
 line-height: 1.7; 
-font-size: 30px;
+font-size: 100%;
 color: black;
 text-decoration: underline;
 }
 
 input[type=text] {
-padding: 10px;
-margin-top: 8px;
-margin-bottom: 10px;
+padding: 1.75%;
+margin-top: 1%;
+margin-bottom: 1.5%;
 border: 3px solid;
-width: 300px;
-max-width: 300px;
+width: 50%;
 }
 
 input[type=email] {
-padding: 10px;
-margin-top: 8px;
-margin-bottom: 25px;
+padding: 1.75%;
+margin-top: 1%;
+margin-bottom: 4%;
 border: 3px solid;
-width: 300px;
+width: 50%;
 }
 
 textarea {
-margin-top: 4%;
+margin-top: 2%;
 border: 3px solid;
 resize:none;
 height: 300px;
-width: 600px;
-position: relative;
+width: 100%;
 }
 
 input[type=submit] {
@@ -236,8 +238,7 @@ cursor:pointer;
 text-decoration: none;
 }
 
-/* Footer section, including social links  */
-
+/* Footer section, including social links and link back to top of page */
 .footer-section {
 padding: 1%;     
 text-align: var(--alignCenter); 
@@ -268,36 +269,4 @@ font-size: 50px;
   
 .fa:hover {
 opacity: 0.7;
-}
-
-/* Media queries */
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
- 
-}
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
-
-@media only screen and (orientation: landscape) {
-
 }

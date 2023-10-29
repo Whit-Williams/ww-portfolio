@@ -17,6 +17,9 @@ It will also offer the opportunity to get to know the person behind the code (ak
 ### Project Status
 This is a living project that will be regularly updated as I progress on the web development journey!
 
+- Some project links are currently deadlinks pending the creation of additional projects
+- The contact form is yet to go live, pending backend configuration
+
 ### Technologies
 This project is created with:
 
@@ -35,6 +38,8 @@ This project is created with:
 - How to create a HTML form https://www.w3schools.com/html/html_forms.asp
 - Free placeholder images https://pixabay.com/
 - How to add social media buttons https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
+- Adding media queries https://www.w3schools.com/cssref/css3_pr_mediaquery.php
+- Page icons https://fontawesome.com/icons/envelope?f=classic&s=solid
 
 ### License 
 None
