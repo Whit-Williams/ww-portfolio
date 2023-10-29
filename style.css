@@ -35,7 +35,7 @@ text-align: var(--alignCenter);
 font-size: 500%;
 }
 
-.navBarTop {
+.nav-bar-top {
 display: flex;    
 width: 100%;
 list-style: var(--linkDefaultStyle);
@@ -48,11 +48,11 @@ color: var(--lightContrast);
 font-family: monospace;
 }   
 
-.navBarTop a:hover {
+.nav-bar-top a:hover {
 font-size: 130%;    
 }
 
-.H2Titles {
+.h2-titles {
 text-align: var(--alignCenter); 
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 font-weight: var(--lightImpact);
@@ -66,13 +66,13 @@ color: var(--lightContrast);
 
 /* Flexbox container for the about me section - CHECK THIS */
 
-.aboutMe {
+.aboutme {
 display: flex;
 }
 
 /* About me child elements  - CHECK THIS */
 
-#aboutmeText {
+#aboutme-text {
 padding: 2%;
 width: 80%;
 margin-left: 3%;
@@ -81,7 +81,7 @@ font-family: monospace;
 font-size: 15px;
 }
 
-#aboutmeImg img {
+#aboutme-img img {
 width: 65%;
 height: auto;
 float: right;
@@ -92,7 +92,7 @@ box-shadow: 5px 6px rgba(0, 0, 0, 0.712);
 
 /* Grid container for the Portfolio section */
 
-.myWorkGrid {
+.myworkgrid {
 min-height: 700px;
 margin-left: 2%;
 margin-right: 2%;
@@ -102,51 +102,52 @@ display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: 1fr 1fr 1fr;
 grid-template-areas: 
-"topLeft topLeft topRight"
-"topLeft topLeft middleRight"
-"bottomLeft bottomMiddle bottomRight";
+"top-left top-left top-right"
+"top-left top-left middle-right"
+"bottom-left bottom-middle bottom-right";
 }
 
 /* Grid items within the myWork grid container */
 
-#topLeft {
-grid-area: topLeft;
+#top-left {
+grid-area: top-left;
 background-image: url(./images/colvers-8173610_1920.jpg);
 }
 
-#topRight {
-grid-area: topRight;
+#top-right {
+grid-area: top-right;
 background-image: url(./images/game-image.jpg);
 }
 
-#middleRight {
-grid-area: middleRight;
+#middle-right {
+grid-area: middle-right;
 background-image: url(./images/dog-image.jpg);
 }
 
-#bottomLeft {
-grid-area: bottomLeft;
+#bottom-left {
+grid-area: bottom-left;
 background-image: url(./images/mountains-image.jpg);
 }
 
-#bottomMiddle {
-grid-area: bottomMiddle;
+#bottom-middle {
+grid-area: bottom-middle;
 background-image: url(./images/rope-image.jpg);
 }
 
-#bottomRight {
-grid-area: bottomRight;
+#bottom-right {
+grid-area: bottom-right;
 background-image: url(./images/moon-image.jpg);
 }
 
-.workGridArea {
+.work-grid-area {
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 position: relative;
 }
 
-#topLeft a, #topRight a, #middleRight a, #bottomLeft a, #bottomMiddle a, #bottomRight a {
+#top-left a, #top-right a, #middle-right a, #bottom-left a, 
+#bottom-middle a, #bottom-right a {
 background-color: rgb(0,0,0,0.7);    
 color: var(--lightContrast);
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -157,13 +158,14 @@ padding: 2%;
 font-weight: 100;
 }
 
-#topLeft a:hover, #topRight a:hover, #middleRight a:hover, #bottomLeft a:hover, #bottomMiddle a:hover, #bottomRight a:hover {
+#top-left a:hover, #top-right a:hover, #middle-right a:hover,
+#bottom-left a:hover, #bottom-middle a:hover, #bottom-right a:hover {
 font-size: 280%;    
 }
 
 /* Selectors for the contact me section */
 
-#contactMe {    
+#contactme {    
 display: flex;
 font-family: monospace;
 font-size: 15px;
@@ -171,7 +173,7 @@ justify-content: space-evenly;
 flex-direction: row;
 }
 
-#contactForm {
+#contact-form {
 border: 5px var(--darkBorder) solid;
 padding: 3% 5% 5% 5%;
 margin: 2%;    
@@ -233,24 +235,24 @@ text-decoration: none;
 
 /* Footer section, including social links  */
 
-.footerSection {
-padding: 1% 1% 2% 1%;     
+.footer-section {
+padding: 1%;     
 text-align: var(--alignCenter); 
 background-color: var(--darkBackgr);
 color: var(--lightContrast);
 font-family: monospace;   
 }
 
-.footerSection a h5 {
+.footer-section a h5 {
 font-family: monospace;
 font-size: 15px;      
 }
 
-.footerSection a h5:hover {
+.footer-section a h5:hover {
 text-decoration: underline;    
 }
 
-.socialLinks p {   
+.social-links p {   
 display: none;     
 }
 
