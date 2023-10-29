@@ -3,29 +3,60 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-    body {
-width: 100%;     
+body {
+width: 100%;   
+}
+.nav-bar-top ul {
+display: flex;
+justify-content: space-around;  
 }
 
 .aboutme {
 display: flex;
-flex-direction: column-reverse; 
+flex-direction: column;
 }
 
-#aboutme-img img {   
-box-shadow: none; 
+#aboutme-text {
+border: none;
+text-align: center;
+}
+
+#aboutme-img img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+border: 2px solid black;
+box-shadow: none;
+width: 50%;   
+}
+
+#aboutme-alternative {
+display: initial;
+width: 100%;
+padding: 0% 0.5% 2% 1%;   
+font-family: monospace;
+font-size: 120%;
+text-align: center;
+}
+
+.work-grid-area {
+font-size: 70%;
+background-size: cover;
+height: 500px;   
 }
 
 .myworkgrid {
 display: flex;
 flex-direction: column;
-justify-content: space-around;
-height: auto; 
+justify-content: center;
+gap: 1;
 }
 
 .contactme {
 display: flex;
-flex-direction: column;    
+flex-direction: column;
+border: 2px solid rgba(29, 57, 44, 0.795);
+margin-bottom: 3%;    
 }
 
 #contact-form {
@@ -33,14 +64,18 @@ display: none;
 }
 
 #myemail {
-font-size: 75%;    
+font-size: 95%; 
+font-family: monospace;
+display: block; 
 }
 
 .smallscreenemail {
 display: initial;
 padding: 10%;
+height: 200px;
 text-align: center;
-font-size: 150%;    
+font-size: 150%; 
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
 }
 
 .myemail {
@@ -50,29 +85,84 @@ display: none;
 .footer-section {
 padding-top: 5%    
 }
-}
-
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
 
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Small devices (portrait tablets and large phones) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+.contactme {
+display: flex;
+flex-direction: column;
+border: 2px solid rgba(29, 57, 44, 0.795);
+margin-bottom: 3%;
+}
+
+#contact-form {
+display: none;
+}
+
+#myemail {
+font-size: 95%; 
+font-family: monospace;
+display: block; 
+}
+
+.smallscreenemail {
+display: initial;
+padding: 10%;
+height: 200px;
+text-align: center;
+font-size: 150%; 
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+}
+
+.myemail {
+display: none;
+}
+
+.footer-section {
+padding-top: 5%
+}
 
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* Larger devices (laptops/desktops, from 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+.contactme {
+display: flex;
+flex-direction: column;
+border: 2px solid rgba(29, 57, 44, 0.795);
+margin-bottom: 3%;
+}
+
+#contact-form {
+display: initial;
+}
+
+#myemail {
+font-size: 95%; 
+font-family: monospace;
+display: block; 
+}
+
+.smallscreenemail {
+display: none; 
+}
+
+.myemail {
+display: initial;
+text-align: center;
+}
+
+.footer-section {
+padding-top: 3%
+}
+
 
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
 
 @media only screen and (orientation: landscape) {
 
