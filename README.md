@@ -30,9 +30,8 @@ This project is created with:
 - Navigation bar links to each section of web page
 - About me and Get in touch sections use CSS Flexbox
 - Portfolio section uses CSS Grid with featured project image larger than the others
-- Hovering over project titles in portfolio section uncovers additional information using (INSERT)
-- Each project title is configured to link to deployed application
-- Media queries have been added to the page's CSS style sheet to create a responsive layout
+- Each project title is configured to link to a deployed application
+- Media queries have been added to the page to create a responsive layout
 
 ### Credits
 - How to create a HTML form https://www.w3schools.com/html/html_forms.asp

@@ -1,11 +1,89 @@
 /* Media queries */
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Smallest devices (phones up to 340px) */ 
+@media only screen and (max-width:340px) { 
 
-body {
-width: 100%;   
+.nav-bar-top ul {
+display: flex;
+justify-content: space-around;  
 }
+
+.aboutme {
+display: flex;
+flex-direction: column;
+}
+
+#aboutme-text {
+border: none;
+text-align: center;
+padding-bottom: 6%;
+}
+
+#aboutme-img img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 1%;
+border: 5px solid black;
+box-shadow: none;
+width: 50%;   
+}
+
+.work-grid-area {
+font-size: 70%;
+background-size: cover;
+height: 500px;   
+}
+
+.myworkgrid {
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 1;
+}
+
+.contactme {
+display: flex;
+flex-direction: column;
+border: 2px solid rgba(29, 57, 44, 0.795);
+margin-bottom: 3%;
+}
+
+#contact-form {
+display: none;
+}
+
+#myemail {
+font-size: 95%; 
+font-family: monospace;
+display: block; 
+}
+
+.smallscreenemail {
+display:none; 
+}
+
+.smallestscreen {
+display: initial;
+text-align: center;
+padding: 5%;
+height: 100px;
+font-size: 150%; 
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;     
+}
+
+.myemail {
+display: none;
+}
+
+.footer-section {
+padding-top: 5%
+}
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width:340px) and (max-width: 600px) {
 .nav-bar-top ul {
 display: flex;
 justify-content: space-around;  
@@ -126,7 +204,6 @@ padding-top: 5%
 .contactme {
 display: flex;
 flex-direction: column;
-border: 2px solid rgba(29, 57, 44, 0.795);
 margin-bottom: 3%;
 }
 

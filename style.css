@@ -36,7 +36,8 @@ font-size: 110%;
 color: var(--light-contrast);
 font-family: monospace;
 display: flex;
-justify-content: space-evenly; 
+justify-content: space-evenly;
+text-align: center; 
 }   
 
 .nav-bar-top a:hover {
@@ -178,6 +179,10 @@ color: black;
 }
 
 .smallscreenemail {
+display: none;    
+}
+
+.smallestscreen {
 display: none;    
 }
 
