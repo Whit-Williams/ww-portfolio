@@ -23,14 +23,21 @@ background-color: var(--darkbackgr);
 color: var(--light-contrast);
 }
 
-h1 {
-padding-bottom: 2.3%;    
+h1 {    
 display: flex;
 justify-content: center;
 text-align: center;  
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-weight: var(--lightimpact);
 font-size: 500%;
+}
+
+header p {
+text-align: center;  
+padding-bottom: 2%;    
+font-family: monospace; 
+font-size: 130%; 
+
 }
 
 .nav-bar-top ul {   
