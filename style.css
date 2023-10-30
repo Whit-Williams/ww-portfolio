@@ -1,6 +1,8 @@
 /* Root properties for CSS Variables  */
 * {
 box-sizing: border-box;
+margin: 0;
+padding: 0;
 }
 
 :root {
@@ -16,28 +18,27 @@ box-sizing: border-box;
 
 /* Declarations for the header section, including navigation bar */
 header {
-padding: 0.01%;
-color: var(--light-contrast);
+padding: 2% 2% 1% 2%;    
 background-color: var(--darkbackgr);
+color: var(--light-contrast);
 }
 
 h1 {
+padding-bottom: 1%;    
+display: flex;
+justify-content: center;
+text-align: center;  
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-weight: var(--lightimpact);
-text-align: var(--aligncenter);
 font-size: 500%;
 }
 
 .nav-bar-top ul {   
-width: 100%;
 list-style: var(--linkdefault);
-background-color: var(--darkbackgr);
-font-size: 110%;
-color: var(--light-contrast);
-font-family: monospace;
 display: flex;
 justify-content: space-evenly;
-text-align: center; 
+font-family: monospace;
+font-size: 110%;
 }   
 
 .nav-bar-top a:hover {
@@ -46,6 +47,7 @@ font-size: 130%;
 
 /* Applies declarations to all H2 titles on page */
 .h2-titles {
+padding: 1.5%;    
 text-align: var(--aligncenter); 
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 font-weight: var(--lightimpact);
@@ -56,6 +58,10 @@ font-size: var(--h2fontsize);
 a:not(.myemail) {
 text-decoration: var(--linkdefault);
 color: var(--light-contrast);    
+}
+
+main {
+background-color: white;    
 }
 
 /* Flexbox container for the about me section - CHECK THIS */
@@ -100,7 +106,7 @@ grid-template-areas:
 /* Grid items within the myWork grid container */
 #top-left {
 grid-area: top-left;
-background-image: url(./images/colvers-8173610_1920.jpg);
+background-image: url(./images/colvers-image.jpg);
 }
 
 #top-right {
@@ -178,11 +184,7 @@ text-decoration: none;
 color: black;    
 }
 
-.smallscreenemail {
-display: none;    
-}
-
-.smallestscreen {
+.smallscreenemail, .smallestscreen{
 display: none;    
 }
 
@@ -236,7 +238,12 @@ color: var(--light-contrast);
 font-family: monospace;   
 }
 
+.footer-section h4 {
+padding-top: 0.5%;    
+}
+
 .footer-section a h5 {
+padding-top: 0.9%;    
 font-family: monospace;
 font-size: 15px;      
 }
