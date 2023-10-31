@@ -158,8 +158,12 @@ font-size: 230%;
 font-weight: 100;
 }
 
-/* THIS NEEDS TO BE UPDATED. HOVER NOT ACTIVE */
-.work-grid-area a:hover {
+#top-left:hover, #top-right:hover, #middle-right:hover, #bottom-left:hover, #bottom-middle:hover, #bottom-right:hover {
+-webkit-transform: scale(1.0);
+-ms-transform: scale(1.0);
+transform: scale(1.0);
+font-size: 130%;
+position: relative;
 
 }
 

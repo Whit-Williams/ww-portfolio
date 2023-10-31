@@ -294,6 +294,12 @@ font-size: 2vw;
 /* Larger devices (laptops/desktops, from 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 1100px) {
 
+#top-left:hover, #top-right:hover, #middle-right:hover, #bottom-left:hover, #bottom-middle:hover, #bottom-right:hover {
+-webkit-transform: scale(1.0);
+-ms-transform: scale(1.0);
+transform: scale(1.0);
+}
+
 .contactme {
 display:flex;
 flex-direction:column;
