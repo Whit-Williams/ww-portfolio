@@ -10,7 +10,7 @@
 </head>
 
 <body>
-        <!--Page title and navigation bar-->
+        <!-- Header section, including page title and navigation bar-->
 
         <header>   
 
@@ -35,7 +35,7 @@
 
         <main>
 
-            <!--About me section starts here-->
+            <!--About me section including text and image-->
 
             <h2 id="about-title" class="h2-titles"> About Me: </h2>
 
@@ -45,9 +45,8 @@
                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." 
                </p> 
     
-                </section>   
+            </section>   
            
-            <!--About me image-->
             <section id="aboutme-img">
                 <img src="./images/aboutmeImage.jpg" alt="AI image of site owner">
              </section>
@@ -60,7 +59,7 @@
 
         <section class="myworkgrid">
 
-                <a href="https://whit-williams.github.io/The-Horiseon-Project/" id="top-left" class="work-grid-area"> <h3>The Horiseon Project</h3> </a>
+                <a href="https://whit-williams.github.io/The-Horiseon-Project/" id="top-left" class="work-grid-area"> <h3> The Horiseon Project </h3> </a>
                 
                 <a href="#" id="top-right" class="work-grid-area"> <h3> Project 2 </h3> </a> 
 
@@ -74,13 +73,14 @@
             
             </section>
 
-            <!--Contact me form starts here-->
+            <!--Contact me section including contact form, starts here-->
 
      <h2 id="contact-title" class="h2-titles"> Send me a message: </h2>
        
     <section class="contactme">
-
-            <form id="contact-form" action="">
+    
+        <!--Contact form displays on larger screens -->
+            <form id="contact-form" action="#">
 
                 <h3> Please enter your details below &#11022;</h3>
     
@@ -103,10 +103,11 @@
 <br>
 <br>
                 <!--Submit form-->
-                <input type="submit" id="submitform"value="Submit" required>
+                <input type="submit" id="submitform"value="Submit" required [aria-label="submit"]>
              
             </form>
 
+        <!--Section next to form that offers contact details-->
                 <section class="alternativecontact">
                     <p> If forms aren't your style, you can find me on: </p>
                     
@@ -124,17 +125,21 @@
 
                 </section>
 
+        <!--Contact sections for smaller screens -->
                 <section class="smallscreenemail"> 
-                    Let's talk &#11022;<a class="myemail" href="mailto:whitneyiams123@ymail.com"> <address> whitneyiams123@ymail.com </address> </address></section>      
+                    <p> Let's talk &#11022; </p> 
+                    <a class="myemail" href="mailto:whitneyiams123@ymail.com"> <address> whitneyiams123@ymail.com
+                    </address>       
                 </section>
+
                 <section class="smallestscreen">
-                     Let's talk &#11022;<a class="myemail" href="mailto:whitneyiams123@ymail.com">&#128231;</a>
+                    </p> Let's talk &#11022; </p> 
+                    <a class="myemail" href="mailto:whitneyiams123@ymail.com"> <address> &#128231; </address> </a>
                 </section>
-            
-        </section>
 
     </main>                   
-            <!--Footer section-->
+            
+    <!--Footer section-->
 
     <footer class="footer-section">
 
@@ -144,16 +149,17 @@
                      
             <a href="https://www.linkedin.com/in/whitney-williams-4b28b127a/" class="fa fa-linkedin fa-2x"> <p> Link to my LinkedIn page </p></a>
             
-            <a href="https://www.medium.com/@thewriterwhit" class="fa fa-medium fa-2x"> <p> Link to my Medium page </p></a>
+            <a href="https://www.medium.com/@thewriterwhit" class="fa fa-medium fa-2x"> <p> Link to my Medium page </p> </a>
             
-            <a href="https://github.com/Whit-Williams" class="fa fa-github fa-2x"> <p>Link to my GitHub page </p></a> 
+            <a href="https://github.com/Whit-Williams" class="fa fa-github fa-2x"> <p> Link to my GitHub page </p> </a> 
             
         </section>
 
         <h4> © Whitney Williams | All Rights Reserved </h4>
 
         <a href="#top"> <h5> Back to the top ↑ </h5> </a>
-</footer>
+
+    </footer>
 
 </body>
 
