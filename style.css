@@ -1,10 +1,11 @@
-/* Root properties for CSS Variables  */
+
 * {
 box-sizing: border-box;
 margin: 0;
 padding: 0;
 }
 
+/* Root properties for CSS Variables  */
 :root {
 --light-contrast: white;
 --h2fontsize: 300%;
@@ -16,7 +17,7 @@ padding: 0;
 --section-margins: 0% 2% 0% 2%;
 }
 
-/* Declarations for the header section, including navigation bar */
+/* Declarations for the header section, including H1 title and navigation bar */
 header {
 padding: 3% 2% 1% 2%;    
 background-color: var(--darkbackgr);
@@ -50,7 +51,7 @@ font-size: 110%;
 font-size: 130%;    
 }
 
-/* Applies declarations to all H2 titles on page */
+/* Applies custom properties to all H2 titles on page */
 .h2-titles {
 padding: 1.5%;    
 text-align: var(--aligncenter); 
@@ -59,7 +60,7 @@ font-weight: var(--lightimpact);
 font-size: var(--h2fontsize);      
 }
 
-/* Excludes the myemail and social media link attributes from styles applied to page links */
+/* Applies custom text-decoration and colour properties to all link attributes */
 a {
 text-decoration: var(--linkdefault);
 color: var(--light-contrast);    
@@ -69,7 +70,7 @@ main {
 background-color: white;    
 }
 
-/* Flexbox container for the about me section */
+/* Flexbox container for the About me section */
 .aboutme {
 display: flex;
 gap: 5%;
@@ -109,7 +110,7 @@ grid-template-areas:
 "bottom-left bottom-middle bottom-right";
 }
 
-/* Grid items within the myWork grid container */
+/* Grid items within the Portfolio grid container */
 #top-left {
 grid-area: top-left;
 background-image: url(./images/colvers-image.jpg);
@@ -158,16 +159,17 @@ font-size: 230%;
 font-weight: 100;
 }
 
-#top-left:hover, #top-right:hover, #middle-right:hover, #bottom-left:hover, #bottom-middle:hover, #bottom-right:hover {
+
+#top-left:hover, #top-right:hover, #middle-right:hover, #bottom-left:hover, 
+#bottom-middle:hover, #bottom-right:hover {
 -webkit-transform: scale(1.0);
 -ms-transform: scale(1.0);
 transform: scale(1.0);
 font-size: 130%;
 position: relative;
-
 }
 
-/* Declarations for the whole contact section */
+/* Declarations for the whole Contact section */
 .contactme {    
 display: flex;
 max-width: 100%;
