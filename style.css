@@ -61,7 +61,7 @@ font-weight: var(--lightimpact);
 font-size: var(--h2fontsize);      
 }
 
-/* Excludes the myemail class attribute from styles applied to page links */
+/* Excludes the myemail and social media link attributes from styles applied to page links */
 a:not(.myemail, #contact-me-socials) {
 text-decoration: var(--linkdefault);
 color: var(--light-contrast);    
@@ -71,14 +71,14 @@ main {
 background-color: white;    
 }
 
-/* Flexbox container for the about me section - CHECK THIS */
+/* Flexbox container for the about me section */
 .aboutme {
 display: flex;
 gap: 5%;
 margin: var(--section-margins)
 }
 
-/* About me child elements  - CHECK THIS */
+/* About me child elements, including text box and image */
 #aboutme-text {
 display: flex;
 flex-wrap: wrap;
@@ -161,7 +161,7 @@ padding: 2%;
 font-weight: 100;
 }
 
-/* THIS NEEDS TO BE UPDATED. HOVER NOT WORKING */
+/* THIS NEEDS TO BE UPDATED. HOVER NOT ACTIVE */
 #top-left a:hover, #top-right a:hover, #middle-right a:hover,
 #bottom-left a:hover, #bottom-middle a:hover, #bottom-right a:hover {
 font-size: 240%;   
@@ -219,6 +219,7 @@ color: var(--light-contrast);
 cursor:pointer;
 text-decoration: none;
 }
+
 /* Social media and email icons/links */
 .alternativecontact {
 padding: 1.75% 5% 1.5% 3%;

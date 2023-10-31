@@ -64,6 +64,7 @@ gap: 1;
 #bottom-middle h3, #bottom-right h3 {
 font-size: 6vw;    
 }
+
 .contactme {
 display: flex;
 flex-direction: column;
@@ -97,6 +98,7 @@ padding: 5%
 padding-top: 4%;
 font-size: 4vw;
 }
+
 }
 
 /* Extra small devices (phones from 340px to 600px ) */
@@ -148,7 +150,6 @@ width: 50%;
 }
 
 .work-grid-area {
-font-size: 70%;
 background-size: cover;
 height: 500px;   
 }
@@ -173,10 +174,6 @@ margin-bottom: 3%;
 padding-top: 5%;    
 }
 
-#contact-form {
-display: none;    
-}
-
 .myemail {
 display: block; 
 padding-top: 4%;
@@ -194,7 +191,7 @@ font-size: 6vw;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
 }
 
-.alternativecontact {
+.alternativecontact, #contact-form {
 display: none;    
 }
 
@@ -249,10 +246,6 @@ border: 2px solid rgba(29, 57, 44, 0.795);
 margin-bottom: 3%;
 }
 
-#contact-form {
-display: none;
-}
-
 .myemail {
 font-size: 4vw; 
 font-family: monospace;
@@ -269,17 +262,19 @@ font-size: 4vw;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
 }
 
-.alternativecontact {
+.alternativecontact, #contact-form {
 display: none;
 }
 
 .footer-section {
 padding: 5%
 }
+
 .footer-section h4, .footer-section a h5 {
 padding-top: 4%;
 font-size: 2vw;
 }
+
 }
 
 /* Larger devices (laptops/desktops, from 768px and up) */
